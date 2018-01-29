@@ -7,8 +7,8 @@ ln -sf ~/dotfiles/.zlogin ~/.zlogin
 ln -sf ~/dotfiles/.zlogout ~/.zlogout
 ln -sf ~/dotfiles/.zprofile ~/.zprofile
 ln -sf ~/dotfiles/.zshenv ~/.zshenv
-ln -sf ~/dotfiles/prezto ~/prezto
-ln -sf ~/dotfiles/.zprezto ~/.zprezto
-if [ ! -L ~/.zprezto -a -d ~/dotfiles/prezto ]; then
-    ln -s ~/dotfiles/prezto ~/.zprezto
-fi
+#ln -sf ~/dotfiles/prezto ~/prezto
+#ln -sf ~/dotfiles/.zprezto ~/.zprezto
+#if [ ! -L ~/.zprezto -a -d ~/dotfiles/prezto ]; then
+#    ln -s ~/dotfiles/prezto ~/.zprezto
+#fi
