@@ -8,3 +8,4 @@ ln -sf ~/dotfiles/.zlogout ~/.zlogout
 ln -sf ~/dotfiles/.zprofile ~/.zprofile
 ln -sf ~/dotfiles/.zshenv ~/.zshenv
 ln -sf ~/dotfiles/prezto ~/prezto
+ln -sf ~/dotfiles/.zprezto ~/.zprezto
