@@ -12,4 +12,10 @@ fi
 
 # Customize to your needs...
 
-PATH=$PATH:/usr/local/texlive/2016/bin/x86_64-darwin/
+#PATH=$PATH:/usr/local/texlive/2016/bin/x86_64-darwin/
+
+### Virtualenvwrapper
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    export WORKON_HOME=$HOME/.virtualenvs
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
