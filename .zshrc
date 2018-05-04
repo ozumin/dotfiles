@@ -38,3 +38,6 @@ if [[ ! -n $TMUX ]]; then
         :  # Start terminal normally
     fi
 fi
+
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export MANPATH=/opt/local/man:$MANPATH
