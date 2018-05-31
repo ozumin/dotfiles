@@ -11,5 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-export XDG_CONFIG_HOME="$HOME/.config"
+#export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CONFIG_HOME=$HOME/dotfiles
 #PATH=$PATH:/usr/local/texlive/2016/bin/x86_64-darwin/
