@@ -21,6 +21,8 @@ call plug#begin('~/dotfiles/.vim/plugged')
   let g:deoplete#enable_at_startup = 1
 
   Plug 'jalvesaq/Nvim-R'
+  Plug 'soramugi/auto-ctags.vim'
+  Plug 'slim-template/vim-slim'
 call plug#end()
 
 syntax on
@@ -36,6 +38,7 @@ set nocompatible
 set whichwrap=b,s,h,l,<,>,[,]
 set backspace=indent,eol,start
 set guioptions+=a
+setlocal tabstop=2 shiftwidth=2 softtabstop=2
 imap <C-p> <Up>
 imap <C-n> <Down>
 imap <C-b> <Left>
