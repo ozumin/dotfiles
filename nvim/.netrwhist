@@ -1,8 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/mizuo/Documents/University/MurataLab/Research/hino/sun/artificial'
 let g:netrw_dirhist_2='/Users/mizuo/Documents/University/MurataLab/Research/hino/sun/correlation'
 let g:netrw_dirhist_3='/Users/mizuo/Documents/University/MurataLab/unilab/mindwave/.git'
 let g:netrw_dirhist_4='/Users/mizuo/Documents/University/MurataLab/unilab/unilab_eeg/sokect_test/py3'
 let g:netrw_dirhist_5='/Users/mizuo/Documents/University/MurataLab/Research/hino/sun/visualization'
 let g:netrw_dirhist_6='/Users/mizuo/Documents/University/MurataLab/Research/hino/sun/glasso'
+let g:netrw_dirhist_7='/Users/mizuo/Documents/Program/Ruby/ctci/spec'
+let g:netrw_dirhist_8='/Users/mizuo/Documents/University/MurataLab/Research/hino/sun/animation/compare_lr_cv'
+let g:netrw_dirhist_9='/Users/mizuo/Documents/University/MurataLab/Research/hino/sun/glasso'
