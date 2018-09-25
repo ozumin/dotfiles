@@ -14,5 +14,9 @@ fi
 #export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CONFIG_HOME=$HOME/dotfiles
 #PATH=$PATH:/usr/local/texlive/2016/bin/x86_64-darwin/
+export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PKG_CONFIG_PATH=/usr/local/Cellar/imagemagick@6/6.9.10-11/lib/pkgconfig
 
 setopt nonomatch

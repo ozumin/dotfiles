@@ -15,11 +15,12 @@ call plug#begin('~/dotfiles/.vim/plugged')
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   else
     Plug 'Shougo/deoplete.nvim'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
     endif
   let g:deoplete#enable_at_startup = 1
 
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+  Plug 'Shougo/denite.nvim'
   Plug 'jalvesaq/Nvim-R'
   Plug 'soramugi/auto-ctags.vim'
   Plug 'slim-template/vim-slim'
