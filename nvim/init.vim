@@ -15,12 +15,17 @@ call plug#begin('~/dotfiles/.vim/plugged')
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   else
     Plug 'Shougo/deoplete.nvim'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
     endif
   let g:deoplete#enable_at_startup = 1
-
+  Plug 'Shougo/denite.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
   Plug 'jalvesaq/Nvim-R'
+  Plug 'soramugi/auto-ctags.vim'
+  Plug 'slim-template/vim-slim'
+  Plug 'scrooloose/nerdtree'
+  Plug 'cohama/lexima.vim'
+  Plug 'kassio/neoterm'
 call plug#end()
 
 syntax on
@@ -40,3 +45,4 @@ imap <C-p> <Up>
 imap <C-n> <Down>
 imap <C-b> <Left>
 imap <C-f> <Right>
+nnoremap :tree :NERDTreeToggle
