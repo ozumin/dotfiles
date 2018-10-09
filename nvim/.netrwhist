@@ -1,10 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/m-nagayama/ThingsEx-backend/app/controllers/users'
-let g:netrw_dirhist_2='/Users/m-nagayama/ThingsEx-backend/app/views/admin'
-let g:netrw_dirhist_3='/Users/nagayama/ThingsEx-backend/app/views/admin/users'
-let g:netrw_dirhist_4='/Users/nagayama/ThingsEx-backend/app/views/admin/products'
-let g:netrw_dirhist_5='/Users/nagayama/ThingsEx-backend/app/views/users/registrations'
-let g:netrw_dirhist_6='/Users/nagayama/ThingsEx-backend/app/views/admin'
-let g:netrw_dirhist_7='/Users/nagayama/ThingsEx-backend/app/models'
-let g:netrw_dirhist_8='/Users/nagayama/ThingsEx-backend/spec/routing'
+let g:netrw_dirhist_cnt =0

@@ -24,6 +24,7 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'jalvesaq/Nvim-R'
   Plug 'soramugi/auto-ctags.vim'
   Plug 'slim-template/vim-slim'
+  Plug 'thoughtbot/vim-rspec'
 call plug#end()
 
 syntax on
