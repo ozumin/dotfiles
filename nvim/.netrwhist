@@ -1,8 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/nagayama/ThingsEx-backend/spec/requests/bank_accounts'
 let g:netrw_dirhist_2='/Users/nagayama/ThingsEx-backend/spec/requests/asks'
 let g:netrw_dirhist_3='/Users/nagayama/ThingsEx-backend/spec/requests/bank_accounts'
 let g:netrw_dirhist_4='/Users/nagayama/ThingsEx-backend/spec/requests'
 let g:netrw_dirhist_5='/Users/nagayama/ThingsEx-backend/spec/requests/asks'
 let g:netrw_dirhist_6='/Users/nagayama/dotfiles/configstore'
+let g:netrw_dirhist_7='/Users/nagayama/dotfiles/htop'
+let g:netrw_dirhist_8='/Users/nagayama/.zprezto'
