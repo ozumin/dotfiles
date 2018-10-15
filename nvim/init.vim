@@ -24,8 +24,9 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'jalvesaq/Nvim-R'
   Plug 'soramugi/auto-ctags.vim'
   Plug 'slim-template/vim-slim'
-  Plug 'thoughtbot/vim-rspec'
-call plug#end()
+  Plug 'keith/rspec.vim'
+  Plug 'Yggdroot/indentLine'
+  call plug#end()
 
 syntax on
 set autoindent
@@ -45,3 +46,4 @@ imap <C-p> <Up>
 imap <C-n> <Down>
 imap <C-b> <Left>
 imap <C-f> <Right>
+let g:indentLine_color_term = 239
