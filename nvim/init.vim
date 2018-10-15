@@ -26,7 +26,10 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'slim-template/vim-slim'
   Plug 'keith/rspec.vim'
   Plug 'Yggdroot/indentLine'
-  call plug#end()
+  Plug 'scrooloose/nerdtree'
+  Plug 'cohama/lexima.vim'
+  Plug 'kassio/neoterm'
+call plug#end()
 
 syntax on
 set autoindent
@@ -46,4 +49,6 @@ imap <C-p> <Up>
 imap <C-n> <Down>
 imap <C-b> <Left>
 imap <C-f> <Right>
+
+nnoremap :tree :NERDTreeToggle
 let g:indentLine_color_term = 239
