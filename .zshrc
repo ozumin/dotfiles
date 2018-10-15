@@ -11,33 +11,12 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-
+#export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CONFIG_HOME=$HOME/dotfiles
 #PATH=$PATH:/usr/local/texlive/2016/bin/x86_64-darwin/
+export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PKG_CONFIG_PATH=/usr/local/Cellar/imagemagick@6/6.9.10-11/lib/pkgconfig
 
-### Virtualenvwrapper
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-    export WORKON_HOME=$HOME/.virtualenvs
-    source /usr/local/bin/virtualenvwrapper.sh
-fi
-
-#tmux
-if [[ ! -n $TMUX ]]; then
-    # get the IDs
-    ID="`tmux list-sessions`"
-    if [[ -z "$ID" ]]; then
-      tmux new-session
-    fi
-    create_new_session="Create New Session"
-    ID="$ID\n${create_new_session}:"
-    ID="`echo $ID | $PERCOL | cut -d: -f1`"
-    if [[ "$ID" = "${create_new_session}" ]]; then
-        tmux new-session
-    elif [[ -n "$ID" ]]; then
-        tmux attach-session -t "$ID"
-    else
-        :  # Start terminal normally
-    fi
-fi
-
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-export MANPATH=/opt/local/man:$MANPATH
+setopt nonomatch
