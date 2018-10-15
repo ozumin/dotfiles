@@ -17,12 +17,15 @@ call plug#begin('~/dotfiles/.vim/plugged')
     Plug 'Shougo/deoplete.nvim'
     endif
   let g:deoplete#enable_at_startup = 1
-  Plug 'Shougo/denite.nvim'
+
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
+  Plug 'Shougo/denite.nvim'
   Plug 'jalvesaq/Nvim-R'
   Plug 'soramugi/auto-ctags.vim'
   Plug 'slim-template/vim-slim'
+  Plug 'keith/rspec.vim'
+  Plug 'Yggdroot/indentLine'
   Plug 'scrooloose/nerdtree'
   Plug 'cohama/lexima.vim'
   Plug 'kassio/neoterm'
@@ -41,8 +44,11 @@ set nocompatible
 set whichwrap=b,s,h,l,<,>,[,]
 set backspace=indent,eol,start
 set guioptions+=a
+setlocal tabstop=2 shiftwidth=2 softtabstop=2
 imap <C-p> <Up>
 imap <C-n> <Down>
 imap <C-b> <Left>
 imap <C-f> <Right>
+
 nnoremap :tree :NERDTreeToggle
+let g:indentLine_color_term = 239
