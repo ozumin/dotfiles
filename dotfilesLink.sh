@@ -10,7 +10,7 @@ ln -sf ~/dotfiles/.zshenv ~/.zshenv
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 ln -sf ~/dotfiles/.hyper.js ~/.hyper.js
-ln -sf ~/dotfiles/.karabiner.json ~/.config/karabiner/karabiner.json
+ln -sf ~/dotfiles/karabiner ~/.config/
 if [ ! -L ~/.zprezto -a -d ~/dotfiles/prezto ]; then
     ln -s ~/dotfiles/prezto ~/.zprezto
 fi
