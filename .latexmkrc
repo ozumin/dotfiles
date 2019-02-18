@@ -16,4 +16,3 @@ if ($^O eq 'darwin') {
 } else {
   $pdf_previewer = 'xdg-open';
 }
-
