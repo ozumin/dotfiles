@@ -31,6 +31,7 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'airblade/vim-gitgutter'
   Plug 'kassio/neoterm'
   Plug 'tpope/vim-fugitive'
+  Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 syntax on
