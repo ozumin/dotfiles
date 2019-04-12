@@ -4,7 +4,7 @@ if has('vim_starting')
     echo 'install vim-plug...'
     call system('mkdir -p ~/dotfiles/.vim/plugged/vim-plug')
     call system('git clone https://github.com/junegunn/vim-plug.git ~/dotfiles/.vim/plugged/vim-plug/autoload')
-  end
+  endif
 endif
 
 call plug#begin('~/dotfiles/.vim/plugged')
@@ -15,7 +15,7 @@ call plug#begin('~/dotfiles/.vim/plugged')
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   else
     Plug 'Shougo/deoplete.nvim'
-    endif
+  endif
   let g:deoplete#enable_at_startup = 1
 
   Plug 'roxma/nvim-yarp'
@@ -44,6 +44,7 @@ set nocompatible
 set whichwrap=b,s,h,l,<,>,[,]
 set backspace=indent,eol,start
 set guioptions+=a
+setlocal showmatch "括弧入力時の対応する括弧を表示
 setlocal tabstop=2 shiftwidth=2 softtabstop=2
 imap <C-p> <Up>
 imap <C-n> <Down>
@@ -52,3 +53,4 @@ imap <C-f> <Right>
 
 nnoremap :tree :NERDTreeToggle
 let g:indentLine_color_term = 239
+let g:tex_conceal = ''
