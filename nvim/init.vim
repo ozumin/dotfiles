@@ -1,4 +1,4 @@
-if has('vim_starting')
+ if has('vim_starting')
   set rtp+=~/dotfiles/.vim/plugged/vim-plug
   if !isdirectory(expand('~/dotfiles/.vim/plugged/vim-plug'))
     echo 'install vim-plug...'
@@ -28,7 +28,11 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'Yggdroot/indentLine'
   Plug 'scrooloose/nerdtree'
   Plug 'cohama/lexima.vim'
+  Plug 'airblade/vim-gitgutter'
   Plug 'kassio/neoterm'
+  Plug 'tpope/vim-fugitive'
+  Plug 'leafgarland/typescript-vim'
+  Plug 'ngmy/vim-rubocop'
 call plug#end()
 
 syntax on
@@ -44,7 +48,7 @@ set nocompatible
 set whichwrap=b,s,h,l,<,>,[,]
 set backspace=indent,eol,start
 set guioptions+=a
-setlocal showmatch "括弧入力時の対応する括弧を表示
+set showmatch "括弧入力時の対応する括弧を表示
 setlocal tabstop=2 shiftwidth=2 softtabstop=2
 imap <C-p> <Up>
 imap <C-n> <Down>
