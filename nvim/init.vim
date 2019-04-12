@@ -32,6 +32,7 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'kassio/neoterm'
   Plug 'tpope/vim-fugitive'
   Plug 'leafgarland/typescript-vim'
+  Plug 'ngmy/vim-rubocop'
 call plug#end()
 
 syntax on
