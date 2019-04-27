@@ -1,1 +1,4 @@
 .vim/
+direnv/
+configstore
+karabiner/automatic_backups

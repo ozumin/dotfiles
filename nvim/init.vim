@@ -33,6 +33,7 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'leafgarland/typescript-vim'
   Plug 'ngmy/vim-rubocop'
+  Plug 'tpope/vim-rails'
 call plug#end()
 
 syntax on
@@ -54,6 +55,8 @@ imap <C-p> <Up>
 imap <C-n> <Down>
 imap <C-b> <Left>
 imap <C-f> <Right>
+imap <C-a> <Home>
+imap <C-e> <End>
 
 nnoremap :tree :NERDTreeToggle
 let g:indentLine_color_term = 239
