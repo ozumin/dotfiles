@@ -28,3 +28,8 @@ export PYENV_ROOT=/usr/local/var/pyenv
 export PATH="$HOME/.pyenv/shims:$PATH"
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 #export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+# alias
+alias g='git'
+alias n='nvim'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
