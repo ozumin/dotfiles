@@ -1,0 +1,12 @@
+[alias]
+  alias = !git config --get-regexp alias
+  a = add
+  aa = add --all
+  co = checkout
+  s = status -sb
+  ss = status
+  comm = commit -m
+  b = branch
+  d = diff
+  pl = pull
+  ps = push

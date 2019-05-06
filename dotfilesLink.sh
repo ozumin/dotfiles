@@ -9,6 +9,7 @@ ln -sf ~/dotfiles/.zprofile ~/.zprofile
 ln -sf ~/dotfiles/.zshenv ~/.zshenv
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
+ln -sf ~/dotfiles/gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.hyper.js ~/.hyper.js
 ln -sf ~/dotfiles/karabiner ~/.config/
 if [ ! -L ~/.zprezto -a -d ~/dotfiles/prezto ]; then
