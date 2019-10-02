@@ -14,8 +14,12 @@ cd $ZPREZTODIR
 git pull
 git submodule update --init --recursive
 ```
+install brew:
+```
+./init
+```
 install plugin for vim:
 ```
-nvim (some-file)
+n
 :PlugInstall
 ```
