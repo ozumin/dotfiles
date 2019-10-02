@@ -10,3 +10,6 @@
   d = diff
   pl = pull
   ps = push
+[user]
+	name = Mizuo Nagayama
+	email = mizuo.n@gmail.com
