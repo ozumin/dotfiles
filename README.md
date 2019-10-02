@@ -7,6 +7,7 @@ contains:
 - latexmkrc for uplatex (lualatex in history)
 - setting for tmux
 - setting for htop
+- setting for homebrew
 # How to use
 pull this repository and do the following for prezto:
 ```
