@@ -4,6 +4,13 @@
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
+### Virtualenvwrapper
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+  export WORKON_HOME=$HOME/.virtualenvs
+  export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+  export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+  source /usr/local/bin/virtualenvwrapper.sh
+fi
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -22,13 +29,14 @@ export PATH="$HOME/.yarn/bin:$PATH"
   eval "$(rbenv init -)"
 setopt nonomatch
 # brew で rmtrashをインストール
-alias rm='rmtrash'
+#alias rm='rmtrash'
 # pyenv path
-export PYENV_ROOT=/usr/local/var/pyenv
-export PATH="$HOME/.pyenv/shims:$PATH"
+#export PYENV_ROOT=$HOME/.pyenv
+#export PATH=$PYENV_ROOT/bin:$PATH
+#export PYENV_ROOT=/usr/local/var/pyenv
+#export PATH="$HOME/.pyenv/shims:$PATH"
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 #export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-# alias
 alias g='git'
 alias n='nvim'
 

@@ -65,14 +65,6 @@ nnoremap :tree :NERDTreeToggle
 let g:indentLine_color_term = 239
 let g:tex_conceal = ''
 
-" ファイル保存時にLinterを実行する
-let g:ale_lint_on_save = 1
-" テキスト変更時にはLinterを実行しない
-let g:ale_lint_on_text_changed = 'never'
-" Linter(コードチェックツール)の設定
-let g:ale_linters = {
-\   'python': ['flake8', 'mypy'],
-\}
 " ファイル保存時にはFixerを時刻しない
 let g:ale_fix_on_save = 0
 " テキスト変更時にはFixerを実行しない
