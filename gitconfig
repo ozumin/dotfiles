@@ -11,6 +11,3 @@
   pl = pull
   ps = push
   dc = docker-compose
-[user]
-	name = ozumin
-	email = mizuo.n@gmail.com

@@ -88,6 +88,7 @@ let b:ale_warn_about_trailing_whitespace = 0
 let g:ale_sign_column_always = 1
 " Turn off paste mode when leaving insert
 autocmd InsertLeave * set nopaste
+
 " 行の最初の文字の前にコメント文字をトグル
 nmap <C-K> <Plug>(caw:hatpos:toggle)
 vmap <C-K> <Plug>(caw:hatpos:toggle)
