@@ -7,6 +7,7 @@ contains:
 - latexmkrc for uplatex (lualatex in history)
 - setting for tmux
 - setting for htop
+- setting for homebrew
 # How to use
 pull this repository and do the following for prezto:
 ```
@@ -14,8 +15,12 @@ cd $ZPREZTODIR
 git pull
 git submodule update --init --recursive
 ```
+install brew:
+```
+./init
+```
 install plugin for vim:
 ```
-nvim (some-file)
+n
 :PlugInstall
 ```

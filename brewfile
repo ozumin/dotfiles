@@ -1,0 +1,14 @@
+tap "caskroom/cask"
+tap "homebrew/bundle"
+tap "homebrew/core"
+
+cask "google-chrome"
+cask "iterm2"
+cask "slack"
+
+brew "git"
+brew "vim"
+brew "neovim"
+brew "rmtrash"
+brew "pyenv"
+brew "tmux"
