@@ -33,4 +33,3 @@ alias n='nvim'
 
 #direnv
 eval "$(direnv hook zsh)"
-export HOMEBREW_GITHUB_API_TOKEN=d5838acc92150aa03c6cd73e02ab7e78bc37d086
