@@ -86,3 +86,5 @@ let b:ale_fixers = {
 let b:ale_warn_about_trailing_whitespace = 0
 " ALE実行時にでる目印行を常に表示
 let g:ale_sign_column_always = 1
+" Turn off paste mode when leaving insert
+autocmd InsertLeave * set nopaste
