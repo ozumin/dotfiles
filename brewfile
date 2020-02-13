@@ -5,10 +5,7 @@ tap "homebrew/core"
 cask "google-chrome"
 cask "iterm2"
 cask "slack"
-<<<<<<< HEAD
 cask "karabiner-elements"
-=======
->>>>>>> d125c5fe71e05ab7a46f24beed0014d52645b331
 
 brew "git"
 brew "vim"
@@ -16,7 +13,4 @@ brew "neovim"
 brew "rmtrash"
 brew "pyenv"
 brew "tmux"
-<<<<<<< HEAD
 brew "yarn"
-=======
->>>>>>> d125c5fe71e05ab7a46f24beed0014d52645b331
