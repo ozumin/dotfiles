@@ -1,4 +1,4 @@
- if has('vim_starting')
+if has('vim_starting')
   set rtp+=~/dotfiles/.vim/plugged/vim-plug
   if !isdirectory(expand('~/dotfiles/.vim/plugged/vim-plug'))
     echo 'install vim-plug...'
@@ -38,6 +38,7 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'w0rp/ale'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
+  Plug 'tyru/caw.vim'
 call plug#end()
 
 syntax on
@@ -87,3 +88,9 @@ let b:ale_fixers = {
 let b:ale_warn_about_trailing_whitespace = 0
 " ALE実行時にでる目印行を常に表示
 let g:ale_sign_column_always = 1
+" Turn off paste mode when leaving insert
+autocmd InsertLeave * set nopaste
+
+" 行の最初の文字の前にコメント文字をトグル
+nmap <C-K> <Plug>(caw:hatpos:toggle)
+vmap <C-K> <Plug>(caw:hatpos:toggle)
