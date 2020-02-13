@@ -32,6 +32,7 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'kassio/neoterm'
   Plug 'tpope/vim-fugitive'
   Plug 'leafgarland/typescript-vim'
+  Plug 'peitalin/vim-jsx-typescript'
   Plug 'ngmy/vim-rubocop'
   Plug 'tpope/vim-rails'
   Plug 'w0rp/ale'
