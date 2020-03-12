@@ -11,9 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-#export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CONFIG_HOME=$HOME/dotfiles
-#PATH=$PATH:/usr/local/texlive/2016/bin/x86_64-darwin/
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 export PKG_CONFIG_PATH=/usr/local/Cellar/imagemagick@6/6.9.10-11/lib/pkgconfig
 export PATH="$HOME/.yarn/bin:$PATH"
@@ -27,9 +25,11 @@ alias rm='rmtrash'
 export PYENV_ROOT=/usr/local/var/pyenv
 export PATH="$HOME/.pyenv/shims:$PATH"
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-#export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 # alias
 alias g='git'
 alias n='nvim'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+#direnv
+eval "$(direnv hook zsh)"
