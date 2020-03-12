@@ -48,7 +48,6 @@ set tabstop=2
 set shiftwidth=2
 set cursorline
 set number
-set incsearch
 set noswapfile
 set incsearch
 set clipboard=unnamed
