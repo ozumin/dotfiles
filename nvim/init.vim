@@ -27,7 +27,8 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'keith/rspec.vim'
   Plug 'Yggdroot/indentLine'
   Plug 'scrooloose/nerdtree'
-  Plug 'cohama/lexima.vim' Plug 'airblade/vim-gitgutter'
+  Plug 'cohama/lexima.vim'
+  Plug 'airblade/vim-gitgutter'
   Plug 'kassio/neoterm'
   Plug 'tpope/vim-fugitive'
   Plug 'leafgarland/typescript-vim'
@@ -47,6 +48,7 @@ set shiftwidth=2
 set cursorline
 set number
 set noswapfile
+set incsearch
 set clipboard=unnamed
 set nocompatible
 set whichwrap=b,s,h,l,<,>,[,]
