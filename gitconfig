@@ -10,3 +10,6 @@
   d = diff
   pl = pull
   ps = push
+[user]
+	name = ozumin
+	email = mizuo.n@gmail.com
