@@ -10,4 +10,3 @@
   d = diff
   pl = pull
   ps = push
-  dc = docker-compose
