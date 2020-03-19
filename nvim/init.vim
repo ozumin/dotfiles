@@ -32,6 +32,7 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'kassio/neoterm'
   Plug 'tpope/vim-fugitive'
   Plug 'leafgarland/typescript-vim'
+  Plug 'peitalin/vim-jsx-typescript'
   Plug 'ngmy/vim-rubocop'
   Plug 'tpope/vim-rails'
   Plug 'w0rp/ale'
@@ -47,6 +48,7 @@ set tabstop=2
 set shiftwidth=2
 set cursorline
 set number
+set incsearch
 set noswapfile
 set clipboard=unnamed
 set nocompatible
@@ -72,10 +74,10 @@ let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
 " Linter(コードチェックツール)の設定
 let g:ale_linters = {
-\   'python': ['flake8', 'mypy'],
+\   'python': ['flake8', 'mypy', 'black'],
 \}
 " ファイル保存時にはFixerを時刻しない
-let g:ale_fix_on_save = 0
+" let g:ale_fix_on_save = 0
 " テキスト変更時にはFixerを実行しない
 let g:ale_fix_on_text_changed = 'never'
 " Fixer(コード整形ツール)の設定
