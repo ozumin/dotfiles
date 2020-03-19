@@ -39,6 +39,7 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
   Plug 'tyru/caw.vim'
+  Plug 'tpope/vim-surround'
 call plug#end()
 
 syntax on
