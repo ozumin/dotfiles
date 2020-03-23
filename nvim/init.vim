@@ -38,8 +38,9 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'w0rp/ale'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
-  Plug 'tyru/caw.vim'
-  Plug 'tpope/vim-surround'
+  Plug 'shougo/context_filetype.vim'    " caw.vimを使いやすくするためのもの
+  Plug 'tyru/caw.vim'    " gciでコメントアウト，gcaで行の最後にコメント付けられる
+  Plug 'tpope/vim-surround'    " cs'(とかで囲ってるものを変化できる，ds'で消せる
 call plug#end()
 
 syntax on
@@ -52,7 +53,6 @@ set number
 set incsearch
 set noswapfile
 set clipboard=unnamed
-set nocompatible
 set whichwrap=b,s,h,l,<,>,[,]
 set backspace=indent,eol,start
 set guioptions+=a
@@ -65,6 +65,9 @@ imap <C-f> <Right>
 imap <C-a> <Home>
 imap <C-e> <End>
 
+nnoremap :pluginstall :PlugInstall
+nnoremap :plugclean :PlugClean
+nnoremap :plugupgrade :PlugUpgrade
 nnoremap :tree :NERDTreeToggle
 let g:indentLine_color_term = 239
 let g:tex_conceal = ''
@@ -96,3 +99,5 @@ autocmd InsertLeave * set nopaste
 " 行の最初の文字の前にコメント文字をトグル
 nmap <C-K> <Plug>(caw:hatpos:toggle)
 vmap <C-K> <Plug>(caw:hatpos:toggle)
+
+let g:indentLine_fileTypeExclude = ['markdown']
