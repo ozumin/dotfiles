@@ -41,6 +41,7 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'shougo/context_filetype.vim'    " caw.vimを使いやすくするためのもの
   Plug 'tyru/caw.vim'    " gciでコメントアウト，gcaで行の最後にコメント付けられる
   Plug 'tpope/vim-surround'    " cs'(とかで囲ってるものを変化できる，ds'で消せる
+  Plug 'jsfaint/gen_tags.vim'    " ctags自動生成
 call plug#end()
 
 syntax on
@@ -101,3 +102,6 @@ nmap <C-K> <Plug>(caw:hatpos:toggle)
 vmap <C-K> <Plug>(caw:hatpos:toggle)
 
 let g:indentLine_fileTypeExclude = ['markdown']
+
+" ctagsの自動保存on
+let g:gen_tags#ctags_auto_gen = 1
