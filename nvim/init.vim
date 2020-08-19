@@ -46,7 +46,6 @@ call plug#end()
 
 syntax on
 set autoindent
-set expandtab
 set tabstop=2
 set shiftwidth=2
 set cursorline
@@ -82,7 +81,7 @@ let g:ale_linters = {
 \   'python': ['flake8', 'mypy', 'black'],
 \}
 " ファイル保存時にはFixerを時刻しない
-" let g:ale_fix_on_save = 0
+let g:ale_fix_on_save = 1
 " テキスト変更時にはFixerを実行しない
 let g:ale_fix_on_text_changed = 'never'
 " Fixer(コード整形ツール)の設定
