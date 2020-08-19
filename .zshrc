@@ -28,7 +28,6 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # alias
 alias g='git'
 alias n='nvim'
-alias dc = 'docker-compose'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
