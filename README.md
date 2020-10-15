@@ -11,7 +11,7 @@ contains:
 # How to use
 pull this repository and do the following for prezto:
 ```
-cd $ZPREZTODIR
+cd prezto
 git pull
 git submodule update --init --recursive
 ```
