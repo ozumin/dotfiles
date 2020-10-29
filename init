@@ -11,10 +11,10 @@ ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 ln -sf ~/dotfiles/gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.hyper.js ~/.hyper.js
-ln -sf ~/dotfiles/karabiner ~/.config
+ln -sf ~/dotfiles/karabiner ~/.config/
 if [ ! -L ~/.zprezto -a -d ~/dotfiles/prezto ]; then
     ln -s ~/dotfiles/prezto ~/.zprezto
 fi
 /usr/local/bin/brew bundle --file=~/dotfiles/Brewfile
-pyenv install 3.6.0
+pyenv install 3.8.0
 pip3 --no-cache-dir install -I neovim

@@ -1,4 +1,4 @@
-tap "caskroom/cask"
+tap "homebrew/cask"
 tap "homebrew/bundle"
 tap "homebrew/core"
 
@@ -15,3 +15,4 @@ brew "pyenv"
 brew "tmux"
 brew "yarn"
 brew "ctags"
+brew "global"
