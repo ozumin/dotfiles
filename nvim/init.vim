@@ -104,3 +104,9 @@ let g:indentLine_fileTypeExclude = ['markdown']
 
 " ctagsの自動保存on
 let g:gen_tags#ctags_auto_gen = 1
+
+" タブ設定
+filetype plugin on
+filetype indent on
+"sw=softtabstop, sts=shiftwidth, ts=tabstop, et=expandtabの略
+autocmd FileType html setlocal sw=4 sts=4 ts=4 et
