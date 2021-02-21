@@ -8,6 +8,11 @@ contains:
 - setting for tmux
 - setting for htop
 - setting for homebrew
+
+requirements:
+- Command line tools for Xcode
+- Homebrew
+
 # How to use
 pull this repository and do the following for prezto:
 ```
