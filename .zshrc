@@ -15,12 +15,13 @@ export XDG_CONFIG_HOME=$HOME/dotfiles
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 export PKG_CONFIG_PATH=/usr/local/Cellar/imagemagick@6/6.9.10-11/lib/pkgconfig
 export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 [[ -d ~/.rbenv  ]] && \
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
   eval "$(rbenv init -)"
 setopt nonomatch
 # brew で rmtrashをインストール
-alias rm='rmtrash'
+# alias rm='rmtrash'
 # pyenv path
 export PYENV_ROOT=/usr/local/var/pyenv
 export PATH="$HOME/.pyenv/shims:$PATH"

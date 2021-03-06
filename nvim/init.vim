@@ -22,7 +22,6 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'roxma/vim-hug-neovim-rpc'
   Plug 'Shougo/denite.nvim'
   Plug 'jalvesaq/Nvim-R'
-  Plug 'soramugi/auto-ctags.vim'
   Plug 'slim-template/vim-slim'
   Plug 'keith/rspec.vim'
   Plug 'Yggdroot/indentLine'
@@ -41,7 +40,6 @@ call plug#begin('~/dotfiles/.vim/plugged')
   Plug 'shougo/context_filetype.vim'    " caw.vimを使いやすくするためのもの
   Plug 'tyru/caw.vim'    " gciでコメントアウト，gcaで行の最後にコメント付けられる
   Plug 'tpope/vim-surround'    " cs'(とかで囲ってるものを変化できる，ds'で消せる
-  Plug 'jsfaint/gen_tags.vim'    " ctags自動生成
 call plug#end()
 
 syntax on
@@ -109,4 +107,4 @@ let g:gen_tags#ctags_auto_gen = 1
 filetype plugin on
 filetype indent on
 "sw=softtabstop, sts=shiftwidth, ts=tabstop, et=expandtabの略
-autocmd FileType html setlocal sw=4 sts=4 ts=4 et
+autocmd FileType html setlocal sw=2 sts=2 ts=2 et
