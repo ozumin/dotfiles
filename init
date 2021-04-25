@@ -18,3 +18,6 @@ fi
 /usr/local/bin/brew bundle --file=~/dotfiles/Brewfile
 pyenv install 3.8.0
 pip3 --no-cache-dir install -I neovim
+
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 1
