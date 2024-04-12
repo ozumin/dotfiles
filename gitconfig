@@ -10,6 +10,13 @@
   d = diff
   pl = pull
   ps = push
+	tree = log --graph --pretty=format:'%x09%C(auto) %h %Cgreen %ar %Creset%x09by"%C(cyan ul)%an%Creset" %x09%C(auto)%s %d'
 [user]
 	name = ozumin
 	email = mizuo.n@gmail.com
+[core]
+	excludesfile = /Users/mizuonagayama/.gitignore_global
+[merge]
+	ff = false
+[pull]
+	rebase = true

@@ -23,9 +23,7 @@ setopt nonomatch
 # brew で rmtrashをインストール
 # alias rm='rmtrash'
 # pyenv path
-export PYENV_ROOT=/usr/local/var/pyenv
-export PATH="$HOME/.pyenv/shims:$PATH"
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+eval "$(pyenv init -)"
 # alias
 alias g='git'
 alias n='nvim'
@@ -34,3 +32,12 @@ alias n='nvim'
 
 #direnv
 eval "$(direnv hook zsh)"
+
+# export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/mizuonagayama/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mizuonagayama/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/mizuonagayama/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mizuonagayama/google-cloud-sdk/completion.zsh.inc'; fi

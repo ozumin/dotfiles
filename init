@@ -15,7 +15,7 @@ ln -sf ~/dotfiles/karabiner ~/.config/
 if [ ! -L ~/.zprezto -a -d ~/dotfiles/prezto ]; then
     ln -s ~/dotfiles/prezto ~/.zprezto
 fi
-/usr/local/bin/brew bundle --file=~/dotfiles/Brewfile
+/opt/homebrew/bin/brew bundle --file=~/dotfiles/Brewfile
 pyenv install 3.8.0
 pip3 --no-cache-dir install -I neovim
 
